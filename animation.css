@@ -1,5 +1,32 @@
 @keyframes typewriter
 {
-    from { width: 0; }
-  to { width: 100%; }
+  from{opacity:0}
+  to{opacity: 1;}
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 100%;
+      /* text-wrap: all; */
+    }
+}
+
+@keyframes type{
+  from{width: 0}
+  to{width: 100%}
+}
+
+@keyframes grow{
+ 0% {
+        transform: scale(1);
+        visibility: hidden;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 1;
+        visibility: visible; /* Button becomes visible */
+      }
+      100% {
+        transform: scale(1);
+      }
 }

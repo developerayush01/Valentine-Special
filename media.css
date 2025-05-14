@@ -1,0 +1,27 @@
+@media (min-width:425px)
+{
+    .para,.para1,.para2{
+        font-size: 2vw;
+        width: fit-content;
+    }
+    .btn
+{
+  letter-spacing: 0.5ch;
+  padding: 3%;
+  font-weight: bolder;
+  border-radius: 15px;
+  border:2px solid blue;
+  animation: grow 3s ease-in-out infinite;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
+  opacity: 0;
+  visibility: hidden;
+}
+}
+@media (max-width:425px)
+{
+    .para,.para1,.para2{
+        font-size: 5vw;
+        width: fit-content;
+    }
+}
