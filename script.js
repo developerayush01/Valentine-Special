@@ -1,18 +1,18 @@
-//  document.addEventListener("contextmenu", (e) => {
-//     e.preventDefault();
-//   });
+// //  document.addEventListener("contextmenu", (e) => {
+// //     e.preventDefault();
+// //   });
 
-//   // Disable only Inspect Shortcuts (Not Button Keys)
-//   document.addEventListener("keydown", (e) => {
-//     // Block F12, Ctrl+Shift+I, Ctrl+U
-//     if (
-//       e.key === "F12" ||
-//       (e.ctrlKey && e.shiftKey && e.key === "I") ||
-//       (e.ctrlKey && e.key === "u")
-//     ) {
-//       e.preventDefault();
-//     }
-//   });
+// //   // Disable only Inspect Shortcuts (Not Button Keys)
+// //   document.addEventListener("keydown", (e) => {
+// //     // Block F12, Ctrl+Shift+I, Ctrl+U
+// //     if (
+// //       e.key === "F12" ||
+// //       (e.ctrlKey && e.shiftKey && e.key === "I") ||
+// //       (e.ctrlKey && e.key === "u")
+// //     ) {
+// //       e.preventDefault();
+// //     }
+// //   });
 if(window.innerWidth <=425)
 {
     document.querySelector(".para").style.display="none";
@@ -26,14 +26,12 @@ else
     document.querySelector(".para2").style.display="none";
 }
 
-// //     document.addEventListener("DOMContentLoaded", function () {
-// //     const audio = new Audio("audio/Miss U - Everet Almond.mp3");
-// //     audio.volume = 1; // from 0 to 1
-// //     audio.loop = false;
-// //     audio.play();
-// // });
-
-
+    document.addEventListener("DOMContentLoaded", function () {
+    const audio = new Audio("audio/Miss U - Everet Almond.mp3");
+    audio.volume = 1; // from 0 to 1
+    audio.loop = false;
+    audio.play();
+});
 
 let no=document.querySelector(".nobtn")
 no.addEventListener("mouseover",()=>{
@@ -51,3 +49,7 @@ no.style.position="absolute";
 no.style.top=`${top}px`;
 no.style.left=`${left}px`;
 })
+
+// let now=new Date();
+// console.log(now.getMinutes());
+// console.log(now.getSeconds());

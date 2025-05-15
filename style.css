@@ -1,92 +1,89 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html
+{
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scrollbar-width: 0;
+  min-height: 100vh;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
 }
-body
-{
+body {
   height: 100vh;
   width: 100%;
   position: relative;
 }
-.head
-{
-  height: 100%;
+.head {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main
-{
+.main {
   height: 50%;
   width: fit-content;
   padding: 2%;
   text-align: center;
   /* font-size: 30px; */
 }
-.para
-{
-   display: block;
-   width: 100%;
+.para {
+  display: block;
+  width: 100%;
   overflow: hidden;
   opacity: 0;
   text-wrap: wrap;
   /* height: 2ch; */
   white-space: nowrap;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   word-break: break-all;
   word-wrap: break-word;
   animation: typewriter 5s steps(66, end) forwards;
 }
-.para1
-{
-   display: block;
-   width: 100%;
+.para1 {
+  display: block;
+  width: 100%;
   overflow: hidden;
   text-wrap: wrap;
   font-weight: bolder;
   white-space: nowrap;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   animation: typewriter 5s steps(20, end) forwards;
 }
-.para2
-{
-   width: 100%;
+.para2 {
+  width: 100%;
   overflow: hidden;
   text-wrap: wrap;
   font-weight: bolder;
   opacity: 0;
   white-space: nowrap;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   animation: typewriter 5s steps(33, end) forwards;
   animation-delay: 5s;
 }
-.btn
-{
+.btn {
   letter-spacing: 0.5ch;
   padding: 3%;
   border-radius: 15px;
-  border:2px solid blue;
+  border: 2px solid blue;
   animation: grow 3s ease-in-out infinite;
   animation-delay: 10s;
   animation-fill-mode: backwards;
   opacity: 0;
+  position: relative;
   visibility: hidden;
 }
-.audio{
+.audio {
   display: none;
 }
-.mainbody{
-  height: 100%;
+.mainbody {
+  min-height: 100vh;
   display: flex;
   position: relative;
   justify-content: center;
@@ -94,155 +91,164 @@ body
   font-size: 5vw;
 }
 
-.prepare
-{
+.prepare {
   text-align: center;
 }
-.prepare>p:nth-child(1)
-{
+.prepare > p:nth-child(1) {
   display: block;
-   width: 100%;
-   font-weight: bolder;
+  width: 100%;
+  font-weight: bolder;
   overflow: hidden;
   text-wrap: wrap;
   white-space: nowrap;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   word-break: break-all;
   word-wrap: break-word;
   animation: type 2s steps(13, end) forwards;
   animation-play-state: paused;
   transition: animation 2s ease-in-out;
 }
-.mainbody:target .prepare>p:nth-child(1){
+.mainbody:target .prepare > p:nth-child(1) {
   animation-play-state: running;
 }
-.yn
-{
+.yn {
   font-size: 5vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
-.yn>button
-{
-letter-spacing: 0.5ch;
-height: 40px;
-width: 120px;
+.yn > button {
+  letter-spacing: 0.5ch;
+  height: 40px;
+  width: 120px;
   padding: 5%;
   visibility: hidden;
   border-radius: 15px;
-  border:2px solid blue;
+  border: 2px solid blue;
   animation: grow 3s ease-in-out infinite;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   /* opacity: 0; */
-display: none;
+  display: none;
 }
-a{
+a {
   text-decoration: none;
 }
-.yn>a{
-height: 40px;
-width: 120px;
+.yn > a {
+  height: 40px;
+  width: 120px;
 }
-.yn>a>button
-{
-letter-spacing: 0.5ch;
-height: 40px;
-width: 120px;
+.yn > a > button {
+  letter-spacing: 0.5ch;
+  height: 40px;
+  width: 120px;
   visibility: hidden;
   border-radius: 15px;
-  border:2px solid blue;
+  border: 2px solid blue;
   animation: grow 3s ease-in-out infinite;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   /* opacity: 0; */
-display: none;
+  display: none;
 }
-.mainbody:target .yn>button{
+.mainbody:target .yn > button {
   display: block;
   transition: display 2s ease-in-out;
 }
-.mainbody:target .yn>a>button{
+.mainbody:target .yn > a > button {
   display: block;
   transition: display 2s ease-in-out;
 }
-.nobtn
-{
-   transition: top 0.3s ease, left 0.3s ease;
+.nobtn {
+  transition: top 0.3s ease, left 0.3s ease;
 }
 
 /* moments grid */
+.moment {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
 
 .parent {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 8px;
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 8px;
 }
-    
+
 .div1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
 }
 
 .div2 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 5;
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 5;
 }
 
 .div3 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 8;
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 8;
 }
 
 .div4 {
-    grid-row: span 6 / span 6;
-    grid-column-start: 2;
-    grid-row-start: 5;
+  grid-row: span 6 / span 6;
+  grid-column-start: 2;
+  grid-row-start: 5;
 }
 
 .div5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 1;
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 1;
 }
 
 .div6 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 5;
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 5;
 }
 
 .div7 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 8;
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 9;
 }
 
 .div8 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 8;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 1;
 }
 
 .div9 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 5;
-    grid-row-start: 1;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 4;
 }
 
 .div10 {
-    grid-row: span 4 / span 4;
-    grid-column-start: 5;
-    grid-row-start: 4;
+  grid-row: span 4 / span 4;
+  grid-column-start: 5;
+  grid-row-start: 7;
 }
-        
+
+.parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures images fill div, cropping if needed */
+  display: block;
+  border-radius: 10px; /* optional, adds some softness */
+}
+
 /* Grid end */
