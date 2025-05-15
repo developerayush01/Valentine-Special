@@ -11,7 +11,6 @@ html, body {
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: 0;
-  position: relative;
 }
 body
 {
@@ -89,10 +88,12 @@ body
 .mainbody{
   height: 100%;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   font-size: 5vw;
 }
+
 .prepare
 {
   text-align: center;
@@ -109,7 +110,11 @@ body
   word-break: break-all;
   word-wrap: break-word;
   animation: type 2s steps(13, end) forwards;
+  animation-play-state: paused;
   transition: animation 2s ease-in-out;
+}
+.mainbody:target .prepare>p:nth-child(1){
+  animation-play-state: running;
 }
 .yn
 {
@@ -117,16 +122,127 @@ body
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 .yn>button
 {
 letter-spacing: 0.5ch;
+height: 40px;
+width: 120px;
   padding: 5%;
+  visibility: hidden;
   border-radius: 15px;
   border:2px solid blue;
   animation: grow 3s ease-in-out infinite;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   /* opacity: 0; */
-  visibility: hidden;
+display: none;
 }
+a{
+  text-decoration: none;
+}
+.yn>a{
+height: 40px;
+width: 120px;
+}
+.yn>a>button
+{
+letter-spacing: 0.5ch;
+height: 40px;
+width: 120px;
+  visibility: hidden;
+  border-radius: 15px;
+  border:2px solid blue;
+  animation: grow 3s ease-in-out infinite;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  /* opacity: 0; */
+display: none;
+}
+.mainbody:target .yn>button{
+  display: block;
+  transition: display 2s ease-in-out;
+}
+.mainbody:target .yn>a>button{
+  display: block;
+  transition: display 2s ease-in-out;
+}
+.nobtn
+{
+   transition: top 0.3s ease, left 0.3s ease;
+}
+
+/* moments grid */
+
+.parent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div3 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 8;
+}
+
+.div4 {
+    grid-row: span 6 / span 6;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div7 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 8;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 8;
+}
+
+.div9 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 1;
+}
+
+.div10 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+        
+/* Grid end */

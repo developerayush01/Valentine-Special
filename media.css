@@ -24,4 +24,8 @@
         font-size: 5vw;
         width: fit-content;
     }
+    .yn>button{
+        height: 40px;
+        width: 70px;
+    }
 }
