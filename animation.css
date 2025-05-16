@@ -24,9 +24,39 @@
       50% {
         transform: scale(1.1);
         opacity: 1;
-        visibility: visible; /* Button becomes visible */
+        visibility: visible;
       }
       100% {
         transform: scale(1);
       }
+}
+@keyframes op{
+
+0% {
+        transform: scale(1);
+        visibility: hidden;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+        visibility: visible;
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@keyframes marqueeScroll {
+0% { transform: translateX(0%); }
+  10% { transform: translateX(0%); }
+
+  20% { transform: translateX(-100%); }
+  30% { transform: translateX(-200%); }
+  40% { transform: translateX(-300%); }
+  50% { transform: translateX(-400%); }
+  60% { transform: translateX(-500%); }
+  70% { transform: translateX(-600%); }
+  80% { transform: translateX(-700%); }
+  90% { transform: translateX(-800%); }
+  100% { transform: translateX(-900%); }
 }
