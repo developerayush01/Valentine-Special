@@ -114,6 +114,8 @@
   position: relative;
   width: 100%;
   max-width: 90%;
+  animation: romanticGradient 20s ease infinite;
+  background: linear-gradient(270deg, #FFC0CB, #FFB6C1, #FFF0F5, #FFFFFF);
   height: 70%;
   aspect-ratio: 4 / 5; /* Keeps card proportional */
   border-radius: 14px;
