@@ -16,4 +16,5 @@ var sakura = new Sakura('body', {
           },
         ],
         delay: 200,
+        numPetals: 20
       });

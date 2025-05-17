@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #FFF1F0;
+  color: #2E2E2E;
+  scroll-behavior: smooth;
+}
+
+.head {
+  background: linear-gradient(to bottom, #FFF1F0, #FFD6C0);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.txt h1 {
+  font-size: 3.5rem;
+  font-family: 'Great Vibes', cursive;
+  color: #FF6B81;
+}
+
+.mainbody,
+.moment,
+.proposal,
+.mine,
+.lastnote,
+.dating,
+.connect-section {
+  background-color: #FFF1F0;
+  padding: 50px 20px;
+  color: #2E2E2E;
+}
+
+.btn:hover,
+.bn:hover,
+.scroll-btn:hover,
+.email-btn:hover {
+  background-color: #FFC1CC;
+  color: #2E2E2E;
+  border-color: #FF6B81;
+  box-shadow: 0 6px 16px rgba(255, 97, 117, 0.5);
+  transform: scale(1.05);
+}
+
+.nobtn, .nobtn1, .nobtn2, .nobtn3 {
+  background: transparent;
+  color: #FF6B81;
+  border: 2px dashed #FF6B81;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: 'Courier New', monospace;
+  transition: 0.3s ease;
+}
+
+.nobtn:hover,
+.nobtn1:hover,
+.nobtn2:hover,
+.nobtn3:hover {
+  background: rgba(255, 107, 129, 0.1);
+  transform: scale(0.95);
+}
+
+.card {
+  border: 2px solid #FFB6B9;
+  border-radius: 30px;
+  background: #FFD6C0;
+  box-shadow: 0 10px 20px rgba(255, 107, 129, 0.2);
+  padding: 20px;
+  color: #2E2E2E;
+}
+
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #FF6B81;
+}
+
+a {
+  color: #FF6B81;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFC1CC;
+  text-decoration: underline;
+}

@@ -48,15 +48,52 @@
 
 @keyframes marqueeScroll {
 0% { transform: translateX(0%); }
-  10% { transform: translateX(0%); }
-
-  20% { transform: translateX(-100%); }
-  30% { transform: translateX(-200%); }
-  40% { transform: translateX(-300%); }
-  50% { transform: translateX(-400%); }
-  60% { transform: translateX(-500%); }
-  70% { transform: translateX(-600%); }
-  80% { transform: translateX(-700%); }
-  90% { transform: translateX(-800%); }
   100% { transform: translateX(-900%); }
+}
+@keyframes opac{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes romanticGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
