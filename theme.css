@@ -30,8 +30,8 @@ body {
 .proposal,
 .mine,
 .lastnote,
-.dating,
-.connect-section {
+.dating {
+  border: 5px solid red;
   animation: romanticGradient 20s ease infinite;
   background: linear-gradient(270deg, #FFC0CB, #FFB6C1, #FFF0F5, #FFFFFF)!important;
   background-size: 800% 800%;
