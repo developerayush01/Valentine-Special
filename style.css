@@ -146,9 +146,12 @@ button{
 }
 .yn>a,.yn1>a{
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .nobtn,
 .yn>a>button {
+  padding: 0;
   letter-spacing: 0.5ch;
   height: 40px;
   width: 120px;
@@ -161,6 +164,7 @@ button{
 }
 .nobtn1,
 .yn1>a>button {
+  padding: 0;
   letter-spacing: 0.5ch;
   height: 40px;
   width: 120px;

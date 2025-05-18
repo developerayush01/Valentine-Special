@@ -15,18 +15,6 @@
 //   });
 
 // Scrolllock end
-if(window.innerWidth <=425)
-{
-    document.querySelector(".para").style.display="none";
-    document.querySelector(".para1").style.display="block";
-    document.querySelector(".para2").style.display="block";
-}
-else
-{
-    document.querySelector(".para").style.display="block";
-    document.querySelector(".para1").style.display="none";
-    document.querySelector(".para2").style.display="none";
-}
    document.querySelector(".btn").addEventListener("click",()=>{
     const audio = new Audio("audio/test.mp3");
     audio.volume = 1; // from 0 to 1

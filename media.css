@@ -1,5 +1,8 @@
 @media (min-width:425px)
 {
+  .para1,.para2{
+    display: none;
+  }
     .para,.para1,.para2{
         font-size: 2vw;
         width: fit-content;
@@ -24,6 +27,9 @@
 {
   body{
     
+  }
+  .para{
+    display: none;
   }
     .para,.para1,.para2{
         font-size: 5vw;
