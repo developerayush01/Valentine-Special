@@ -1,4 +1,4 @@
-@media (min-width:425px)
+@media (min-width:426px)
 {
   .para1,.para2{
     display: none;
@@ -25,9 +25,6 @@
 }
 @media (max-width:425px)
 {
-  body{
-    
-  }
   .para{
     display: none;
   }
