@@ -1,4 +1,4 @@
-@media (min-width:426px)
+@media (min-width:769px)
 {
   .para1,.para2{
     display: none;
@@ -23,7 +23,7 @@
   display: none !important;
 }
 }
-@media (max-width:425px)
+@media (max-width:768px)
 {
   .para{
     display: none;
