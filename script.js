@@ -1,18 +1,18 @@
-//  document.addEventListener("contextmenu", (e) => {
-//     e.preventDefault();
-//   });
+ document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+  });
 
-//   // Disable only Inspect Shortcuts (Not Button Keys)
-//   document.addEventListener("keydown", (e) => {
-//     // Block F12, Ctrl+Shift+I, Ctrl+U
-//     if (
-//       e.key === "F12" ||
-//       (e.ctrlKey && e.shiftKey && e.key === "I") ||
-//       (e.ctrlKey && e.key === "u")
-//     ) {
-//       e.preventDefault();
-//     }
-//   });
+  // Disable only Inspect Shortcuts (Not Button Keys)
+  document.addEventListener("keydown", (e) => {
+    // Block F12, Ctrl+Shift+I, Ctrl+U
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.key === "u")
+    ) {
+      e.preventDefault();
+    }
+  });
 
 // Scrolllock end
    document.querySelector(".btn").addEventListener("click",()=>{
