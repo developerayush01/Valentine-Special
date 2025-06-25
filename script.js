@@ -16,11 +16,7 @@ document.addEventListener("keydown", (e) => {
 
 // Scrolllock end
 document.querySelector(".btn").addEventListener("click", () => {
-<<<<<<< HEAD
-  const audio = new Audio("audio/Lights(chosic.com).mp3");
-=======
-  const audio = new Audio("https://archive.org/download/RiverFlowsInYouPiano/RiverFlowsInYouPiano.mp3");
->>>>>>> 289eea757e02584b5c5049baaefb528aa42f011d
+  const audio = new Audio("audio/Lights.mp3");
   audio.volume = 1; // from 0 to 1
   audio.loop = true;
   audio.play();
