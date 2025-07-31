@@ -61,9 +61,9 @@
     display: flex;
     gap: 1%;
     flex: 1;
-    animation: marqueeScroll 20s linear infinite alternate;
 }
 .parent2>div{
+  border: 1px solid red;
   height: 100%;
   overflow: hidden;
   border-radius: 15px;
@@ -71,11 +71,11 @@
   flex: 0 0 100%;
 }
 .parent2>div>img{
-  height: auto;
+  height: 100%;
   width: 100%;
   display: block;
   object-fit: cover;
-  aspect-ratio: 9/16;
+  /* aspect-ratio: 9/16; */
 }
 .proposal{
   height: 100vh;

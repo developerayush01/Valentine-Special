@@ -40,6 +40,50 @@ button{
    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
 
 }
+.parent1{
+  height: 900px;
+  padding: 0;
+}
+.parent1>.swiper>.swiper-wrapper>.swiper-slide{
+  border: 1px solid red;
+  width: 100%;
+}
+.parent1>.swiper>.swiper-wrapper>.swiper-slide>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+/* slider */
+.swiper {
+  width: 100%;
+  height: 95%;
+
+  position: relative;
+}
+.swiper-slide{
+  height: 100%;
+  width: 50%;
+}
+.swiper-slide>img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.swiper-button-next{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.swiper-wrapper{
+  border: 1px solid red;
+}
+/* slider */
 .head {
   height: 100%;
   display: flex;

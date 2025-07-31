@@ -16,7 +16,7 @@ document.addEventListener("contextmenu", (e) => {
 
 // Scrolllock end
 document.querySelector(".btn").addEventListener("click", () => {
-  const audio = new Audio("audio/Lights.mp3");
+  const audio = new Audio("audio/Love.mp3");
   audio.volume = 1; // from 0 to 1
   audio.loop = true;
   audio.play();
