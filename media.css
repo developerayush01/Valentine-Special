@@ -51,9 +51,8 @@
   animation-fill-mode: backwards;
   display: none;
 }
-.parent{
+.parent1{
   display: none !important;
-  flex-direction: column;
 }
     .parent2 {
   width: 100%;
